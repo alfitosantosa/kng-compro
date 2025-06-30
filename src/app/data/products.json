@@ -1,0 +1,120 @@
+{
+  "orthosis_protesis": [
+    {
+      "id": 1,
+      "name": "CORSET LSO JAA BROWN",
+      "category": "Orthosis",
+      "description": "Korset lumbar untuk dukungan punggung bawah dengan material berkualitas tinggi",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Ringan", "Fleksibel", "Nyaman"]
+    },
+    {
+      "id": 2,
+      "name": "CORSET LSO JAA BLACK",
+      "category": "Orthosis",
+      "description": "Korset lumbar warna hitam dengan desain ergonomis untuk kenyamanan maksimal",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Breathable", "Adjustable", "Durable"]
+    },
+    {
+      "id": 3,
+      "name": "CORSET LSO JAA PLATINUM RED",
+      "category": "Orthosis",
+      "description": "Korset premium dengan teknologi terdepan untuk rehabilitasi optimal",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Premium Quality", "Advanced Support", "Stylish Design"]
+    },
+    {
+      "id": 4,
+      "name": "TLSO BRACE JAA BROWN",
+      "category": "Orthosis",
+      "description": "Brace thoraco-lumbar untuk dukungan tulang belakang menyeluruh",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Full Support", "Medical Grade", "Comfortable Fit"]
+    },
+    {
+      "id": 5,
+      "name": "WRIST SPLINT",
+      "category": "Orthosis",
+      "description": "Splint pergelangan tangan untuk pemulihan cedera dan dukungan sendi",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Lightweight", "Breathable", "Easy to Wear"]
+    },
+    {
+      "id": 6,
+      "name": "NECK COLLAR",
+      "category": "Orthosis",
+      "description": "Collar leher untuk dukungan dan stabilisasi area cervical",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Soft Padding", "Adjustable Height", "Medical Grade"]
+    }
+  ],
+  "mobility_aids": [
+    {
+      "id": 7,
+      "name": "Orthopedic Shoes",
+      "category": "Mobility",
+      "description": "Sepatu ortopedi khusus untuk koreksi postur dan kenyamanan berjalan",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Custom Fit", "Arch Support", "Shock Absorption"]
+    },
+    {
+      "id": 8,
+      "name": "Wheel Chair",
+      "category": "Mobility",
+      "description": "Kursi roda berkualitas tinggi untuk mobilitas sehari-hari",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Lightweight Frame", "Comfortable Seat", "Easy Maneuver"]
+    },
+    {
+      "id": 9,
+      "name": "CRUTCH",
+      "category": "Mobility",
+      "description": "Kruk berkualitas untuk dukungan mobilitas dan rehabilitasi",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Adjustable Height", "Non-slip Grip", "Lightweight"]
+    },
+    {
+      "id": 10,
+      "name": "AFO & COCK UP SPLINT",
+      "category": "Orthosis",
+      "description": "Ankle Foot Orthosis dan splint untuk dukungan kaki dan pergelangan",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Custom Molded", "Durable Material", "Comfortable Padding"]
+    }
+  ],
+  "rehabilitation_equipment": [
+    {
+      "id": 11,
+      "name": "GYM BALL",
+      "category": "Rehabilitation",
+      "description": "Bola gym untuk latihan keseimbangan dan penguatan otot core",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Anti-burst", "Multiple Sizes", "Exercise Guide"]
+    },
+    {
+      "id": 12,
+      "name": "SEPEDA STATIS",
+      "category": "Rehabilitation",
+      "description": "Sepeda statis untuk latihan kardio dan penguatan kaki",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Adjustable Resistance", "Digital Display", "Compact Design"]
+    },
+    {
+      "id": 13,
+      "name": "PARALEL BAR",
+      "category": "Rehabilitation",
+      "description": "Parallel bar untuk latihan berjalan dan keseimbangan",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Adjustable Height", "Stable Base", "Professional Grade"]
+    },
+    {
+      "id": 14,
+      "name": "BED TRACTION",
+      "category": "Rehabilitation",
+      "description": "Tempat tidur traksi untuk terapi dan rehabilitasi tulang belakang",
+      "image": "/placeholder.svg?height=300&width=300",
+      "features": ["Medical Grade", "Adjustable Position", "Safety Features"]
+    }
+  ]
+}
