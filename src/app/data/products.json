@@ -5,7 +5,7 @@
       "name": "CORSET LSO JAA BROWN",
       "category": "Orthosis",
       "description": "Korset lumbar untuk dukungan punggung bawah dengan material berkualitas tinggi",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751530520776-343081222.png",
       "features": ["Ringan", "Fleksibel", "Nyaman"]
     },
     {
@@ -13,7 +13,7 @@
       "name": "CORSET LSO JAA BLACK",
       "category": "Orthosis",
       "description": "Korset lumbar warna hitam dengan desain ergonomis untuk kenyamanan maksimal",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529740684-225924148.png",
       "features": ["Breathable", "Adjustable", "Durable"]
     },
     {
@@ -21,7 +21,7 @@
       "name": "CORSET LSO JAA PLATINUM RED",
       "category": "Orthosis",
       "description": "Korset premium dengan teknologi terdepan untuk rehabilitasi optimal",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751526752751-181338115.png",
       "features": ["Premium Quality", "Advanced Support", "Stylish Design"]
     },
     {
@@ -29,7 +29,7 @@
       "name": "TLSO BRACE JAA BROWN",
       "category": "Orthosis",
       "description": "Brace thoraco-lumbar untuk dukungan tulang belakang menyeluruh",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529816860-778057416.png",
       "features": ["Full Support", "Medical Grade", "Comfortable Fit"]
     },
     {
@@ -37,7 +37,7 @@
       "name": "WRIST SPLINT",
       "category": "Orthosis",
       "description": "Splint pergelangan tangan untuk pemulihan cedera dan dukungan sendi",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751530901993-678904541.png",
       "features": ["Lightweight", "Breathable", "Easy to Wear"]
     },
     {
@@ -45,7 +45,7 @@
       "name": "NECK COLLAR",
       "category": "Orthosis",
       "description": "Collar leher untuk dukungan dan stabilisasi area cervical",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529785528-331388505.png",
       "features": ["Soft Padding", "Adjustable Height", "Medical Grade"]
     }
   ],
@@ -55,7 +55,7 @@
       "name": "Orthopedic Shoes",
       "category": "Mobility",
       "description": "Sepatu ortopedi khusus untuk koreksi postur dan kenyamanan berjalan",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529844491-873971981.png",
       "features": ["Custom Fit", "Arch Support", "Shock Absorption"]
     },
     {
@@ -63,7 +63,7 @@
       "name": "Wheel Chair",
       "category": "Mobility",
       "description": "Kursi roda berkualitas tinggi untuk mobilitas sehari-hari",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529892134-960813521.png",
       "features": ["Lightweight Frame", "Comfortable Seat", "Easy Maneuver"]
     },
     {
@@ -71,7 +71,7 @@
       "name": "CRUTCH",
       "category": "Mobility",
       "description": "Kruk berkualitas untuk dukungan mobilitas dan rehabilitasi",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751534917416-28850857.jpg",
       "features": ["Adjustable Height", "Non-slip Grip", "Lightweight"]
     },
     {
@@ -79,7 +79,7 @@
       "name": "AFO & COCK UP SPLINT",
       "category": "Orthosis",
       "description": "Ankle Foot Orthosis dan splint untuk dukungan kaki dan pergelangan",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751529869047-290064555.png",
       "features": ["Custom Molded", "Durable Material", "Comfortable Padding"]
     }
   ],
@@ -89,7 +89,7 @@
       "name": "GYM BALL",
       "category": "Rehabilitation",
       "description": "Bola gym untuk latihan keseimbangan dan penguatan otot core",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751535160225-689618260.jpg",
       "features": ["Anti-burst", "Multiple Sizes", "Exercise Guide"]
     },
     {
@@ -97,7 +97,7 @@
       "name": "SEPEDA STATIS",
       "category": "Rehabilitation",
       "description": "Sepeda statis untuk latihan kardio dan penguatan kaki",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751534972214-499526660.jpg",
       "features": ["Adjustable Resistance", "Digital Display", "Compact Design"]
     },
     {
@@ -105,7 +105,7 @@
       "name": "PARALEL BAR",
       "category": "Rehabilitation",
       "description": "Parallel bar untuk latihan berjalan dan keseimbangan",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751535061547-559192534.jpg",
       "features": ["Adjustable Height", "Stable Base", "Professional Grade"]
     },
     {
@@ -113,7 +113,7 @@
       "name": "BED TRACTION",
       "category": "Rehabilitation",
       "description": "Tempat tidur traksi untuk terapi dan rehabilitasi tulang belakang",
-      "image": "/placeholder.svg?height=300&width=300",
+      "image": "http://file.pasarjaya.cloud/storage/uploads/file-1751534865378-179006558.jpg",
       "features": ["Medical Grade", "Adjustable Position", "Safety Features"]
     }
   ]

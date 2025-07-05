@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, Heart, Users, Award, Shield, DollarSign, UserCheck, Menu } from "lucide-react";
 import ProductGallery from "@/app/components/products-gallery";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,7 @@ export default function HomePage() {
       <header className="bg-blue-900 text-white py-4 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Heart className="h-8 w-8 text-blue-300" />
+            <Image src={"/logo.png"} alt="Logo" width={120} height={40} className="rounded-xs" />
             <div>
               <h1 className="text-xl font-bold">PT KREASI NURWIDHI GROUP</h1>
               <p className="text-sm text-blue-200">Langkah Pasti Menuju Kualitas Hidup yang Lebih Baik</p>
