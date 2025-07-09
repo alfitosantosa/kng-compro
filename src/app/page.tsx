@@ -4,61 +4,36 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, Heart, Users, Award, Shield, DollarSign, UserCheck, Menu } from "lucide-react";
+import { Phone, Mail, Heart, Users, Award, Shield, DollarSign, UserCheck } from "lucide-react";
 import ProductGallery from "@/app/components/products-gallery";
 import Image from "next/image";
+import Navbar from "./mollecules/navbar";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="bg-blue-900 text-white py-4 sticky top-0 z-50">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <Image src={"/logo.png"} alt="Logo" width={120} height={40} className="rounded-xs" />
-            <div>
-              <h1 className="text-xl font-bold">PT KREASI NURWIDHI GROUP</h1>
-              <p className="text-sm text-blue-200">Langkah Pasti Menuju Kualitas Hidup yang Lebih Baik</p>
-            </div>
-          </div>
-          <nav className="hidden md:flex space-x-6">
-            <a href="#about" className="hover:text-blue-300 transition-colors">
-              Tentang
-            </a>
-            <a href="#services" className="hover:text-blue-300 transition-colors">
-              Layanan
-            </a>
-            <a href="#products" className="hover:text-blue-300 transition-colors">
-              Produk
-            </a>
-            <a href="#contact" className="hover:text-blue-300 transition-colors">
-              Kontak
-            </a>
-          </nav>
-          <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-blue-800">
-            <Menu className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
 
+      <Navbar />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-20">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-800 py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-blue-100 mb-6">
             Langkah Pasti Menuju
             <br />
-            <span className="text-blue-600">Kualitas Hidup yang Lebih Baik</span>
+            <span className="text-blue-200">Kualitas Hidup yang Lebih Baik</span>
           </h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-300 mb-8 max-w-3xl mx-auto">
             PT Kreasi Nurwidhi Group merupakan perusahaan terkemuka di Indonesia yang berkomitmen untuk meningkatkan kualitas hidup individu dengan disabilitas melalui penyediaan solusi orthosis, protesis, dan rehabilitasi yang inovatif dan
             berkualitas tinggi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Konsultasi Gratis
+            <Button size="lg" className="bg-blue-200 text-blue-700 hover:text-blue-50 hover:border-blue-50">
+              <a href="https://wa.me/628121892599?text=Aku mau konsultasi">Konsultasi Gratis</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
-              Lihat Produk
+            <Button size="lg" variant="outline" className="border-blue-200 text-blue-200 hover:bg-blue-200 bg-transparent">
+              <Link href="/products">Lihat Produk</Link>
             </Button>
           </div>
         </div>
@@ -144,11 +119,6 @@ export default function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
-
-      {/* Products Section */}
-      <section id="products" className="py-20">
-        <ProductGallery />
       </section>
 
       {/* Why Choose Us Section */}

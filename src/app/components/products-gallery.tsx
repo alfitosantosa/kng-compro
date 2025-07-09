@@ -27,6 +27,17 @@ interface ProductModalProps {
 }
 
 function ProductModal({ product, children }: ProductModalProps) {
+  const whatsappMessage = `Halo, saya ingin bertanya tentang produk berikut:
+
+Nama Produk: ${product.name}
+Kategori: ${product.category}
+
+Fitur Unggulan:
+${product.features.map((feature, index) => `${index + 1}. ${feature}`).join("\n")}
+`;
+
+  const whatsappLink = `https://wa.me/628121892599?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
@@ -51,7 +62,9 @@ function ProductModal({ product, children }: ProductModalProps) {
                 ))}
               </ul>
             </div>
-            <Button className="w-full">Konsultasi Produk</Button>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block">
+              <Button className="w-full">Konsultasi Produk via WhatsApp</Button>
+            </a>
           </div>
         </ScrollArea>
       </DialogContent>
@@ -110,7 +123,7 @@ export default function ProductGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
         {filteredProducts.map((product) => (
           <ProductModal key={product.id} product={product}>
-            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
+            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-blue-400  hover:border-blue-700">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img src={product.image || "/placeholder.svg"} alt={product.name} className="w-full h-48 sm:h-56 object-cover transition-transform hover:scale-105" />
                 <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all flex items-center justify-center">
@@ -135,9 +148,11 @@ export default function ProductGallery() {
                     </Badge>
                   )}
                 </div>
-                <Button size="sm" className="w-full text-xs md:text-sm">
-                  Lihat Detail
-                </Button>
+                <a href="" className="text-xs md:text-sm text-primary hover:underline">
+                  <Button size="sm" className="w-full text-xs md:text-sm bg-blue-900">
+                    Lihat Detail
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </ProductModal>
