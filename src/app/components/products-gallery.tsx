@@ -48,7 +48,7 @@ ${product.features.map((feature, index) => `${index + 1}. ${feature}`).join("\n"
         <ScrollArea className="max-h-[70vh]">
           <div className="space-y-4">
             <img src={product.image || "/placeholder.svg"} alt={product.name} className="w-full h-64 object-cover rounded-lg" />
-            <Badge variant="secondary">{product.category}</Badge>
+            <Badge variant="outline">{product.category}</Badge>
             <p className="text-sm text-muted-foreground">{product.description}</p>
             <Separator />
             <div className="space-y-2">
@@ -106,11 +106,17 @@ export default function ProductGallery() {
       {/* Category Filter */}
       <div className="mb-8">
         <ScrollArea className="w-full whitespace-nowrap">
-          <div className="flex w-max space-x-2 p-1">
+          <div className="flex flex-wrap justify-center  gap-2 p-1 rounded-full bg-muted/60">
             {categories.map((category) => (
-              <Button key={category.id} variant={selectedCategory === category.id ? "default" : "outline"} size="sm" onClick={() => setSelectedCategory(category.id)} className="flex-shrink-0">
+              <Button
+                key={category.id}
+                variant={selectedCategory === category.id ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedCategory(category.id)}
+                className="flex-shrink-0 rounded-full"
+              >
                 {category.name}
-                <Badge variant="secondary" className="ml-2">
+                <Badge variant={selectedCategory === category.id ? "secondary" : "outline"} className="ml-2">
                   {category.count}
                 </Badge>
               </Button>
@@ -123,19 +129,27 @@ export default function ProductGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
         {filteredProducts.map((product) => (
           <ProductModal key={product.id} product={product}>
-            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-blue-400  hover:border-blue-700">
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img src={product.image || "/placeholder.svg"} alt={product.name} className="w-full h-48 sm:h-56 object-cover transition-transform hover:scale-105" />
+            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-border/70 hover:border-primary/70">
+              <div className="relative overflow-hidden rounded-t-lg bg-muted">
+                <img
+                  src={product.image || "/placeholder.svg"}
+                  alt={product.name}
+                  className="w-full h-48 sm:h-56 object-cover transition-transform hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all flex items-center justify-center">
-                  <Eye className="text-white opacity-0 hover:opacity-100 transition-opacity" size={24} />
+                  <Eye className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={24} />
                 </div>
-                <Badge className="absolute top-2 right-2">{product.category}</Badge>
+                <Badge className="absolute top-2 right-2 bg-background/90">
+                  {product.category}
+                </Badge>
               </div>
               <CardHeader className="pb-2">
                 <CardTitle className="text-sm md:text-base line-clamp-2">{product.name}</CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
-                <CardDescription className="text-xs md:text-sm line-clamp-2 mb-3">{product.description}</CardDescription>
+                <CardDescription className="text-xs md:text-sm line-clamp-2 mb-3 text-muted-foreground">
+                  {product.description}
+                </CardDescription>
                 <div className="flex flex-wrap gap-1 mb-3">
                   {product.features.slice(0, 2).map((feature, index) => (
                     <Badge key={index} variant="outline" className="text-xs">
@@ -148,11 +162,9 @@ export default function ProductGallery() {
                     </Badge>
                   )}
                 </div>
-                <a href="" className="text-xs md:text-sm text-primary hover:underline">
-                  <Button size="sm" className="w-full text-xs md:text-sm bg-blue-900">
-                    Lihat Detail
-                  </Button>
-                </a>
+                <Button size="sm" className="w-full text-xs md:text-sm mt-1">
+                  Lihat Detail
+                </Button>
               </CardContent>
             </Card>
           </ProductModal>
