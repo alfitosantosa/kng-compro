@@ -229,8 +229,8 @@ export default function HomePage() {
       <footer className="bg-gray-800 text-gray-300 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Heart className="h-6 w-6 text-blue-400" />
-            <span className="text-lg font-semibold">PT KREASI NURWIDHI GROUP</span>
+            <Image src="/logo.png" alt="Logo" width={50} height={50} className="rounded-md" />
+            <span className="text-lg font-semibold">PT KREASI NURWIDHI GRUP</span>
           </div>
           <p className="text-sm">© 2024 PT Kreasi Nurwidhi Group. Semua hak dilindungi undang-undang.</p>
           <p className="text-sm mt-2">Langkah Pasti Menuju Kualitas Hidup yang Lebih Baik</p>
