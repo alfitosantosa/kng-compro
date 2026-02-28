@@ -129,28 +129,36 @@ export default function ProductGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
         {filteredProducts.map((product) => (
           <ProductModal key={product.id} product={product}>
-            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-border/70 hover:border-primary/70">
-              <div className="relative overflow-hidden rounded-t-lg bg-muted">
+            <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-border/70 hover:border-primary/900 h-full group p-0 gap-0 overflow-hidden">
+              {/* Image Container - Fixed Aspect Ratio */}
+              <div className="relative overflow-hidden bg-muted aspect-[4/3] w-full">
                 <img
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
-                  className="w-full h-48 sm:h-56 object-cover transition-transform hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all flex items-center justify-center">
-                  <Eye className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={24} />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <Eye className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={24} />
                 </div>
-                <Badge className="absolute top-2 right-2 bg-background/90">
+                <Badge variant="outline" className="absolute top-2 right-2 bg-background/90 backdrop-blur-sm">
                   {product.category}
                 </Badge>
               </div>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm md:text-base line-clamp-2">{product.name}</CardTitle>
+              
+              {/* Card Content - Flexible with consistent spacing */}
+              <CardHeader className="pb-3 flex-shrink-0 px-4 pt-4">
+                <CardTitle className="text-sm md:text-base line-clamp-2 min-h-[2.5rem] leading-tight">
+                  {product.name}
+                </CardTitle>
               </CardHeader>
-              <CardContent className="pt-0">
-                <CardDescription className="text-xs md:text-sm line-clamp-2 mb-3 text-muted-foreground">
+              
+              <CardContent className="pt-0 flex-1 flex flex-col px-4 pb-4">
+                <CardDescription className="text-xs md:text-sm line-clamp-2 mb-3 text-muted-foreground min-h-[2.5rem]">
                   {product.description}
                 </CardDescription>
-                <div className="flex flex-wrap gap-1 mb-3">
+                
+                {/* Features Badges - Fixed height area */}
+                <div className="flex flex-wrap gap-1 mb-3 min-h-[1.75rem]">
                   {product.features.slice(0, 2).map((feature, index) => (
                     <Badge key={index} variant="outline" className="text-xs">
                       {feature}
@@ -162,7 +170,12 @@ export default function ProductGallery() {
                     </Badge>
                   )}
                 </div>
-                <Button size="sm" className="w-full text-xs md:text-sm mt-1">
+                
+                {/* Button - Always at bottom */}
+                <Button 
+                  size="sm" 
+                  className="w-full bg-primary text-primary-foreground text-xs md:text-sm mt-auto"
+                >
                   Lihat Detail
                 </Button>
               </CardContent>

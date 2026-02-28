@@ -34,13 +34,13 @@ export default function Navbar() {
             Beranda
           </Link>
           <Link
-            href="#about"
+            href="/#about"
             className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
           >
             Tentang
           </Link>
           <Link
-            href="#services"
+            href="/#services"
             className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
           >
             Layanan
@@ -52,7 +52,7 @@ export default function Navbar() {
             Produk
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
           >
             Kontak
