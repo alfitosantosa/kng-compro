@@ -113,7 +113,7 @@ export default function Navbar() {
           {/* Logo & Brand */}
           <Link
             href="/"
-            className="flex items-center space-x-3 group transition-transform hover:scale-105"
+            className="flex flex-col md:flex-row items-center space-x-3 md:justify-start justify-center group transition-transform hover:scale-105"
             onClick={() => setMenuOpen(false)}
           >
             <div className="relative w-10 h-10 md:w-12 md:h-12">
@@ -146,15 +146,11 @@ export default function Navbar() {
                   onClick={() => handleLinkClick(item.href)}
                   className={cn(
                     "relative px-4 py-2 text-sm font-medium rounded-md transition-all duration-200",
-                    active
-                      ? "text-primary bg-accent"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
+            
                   )}
                 >
                   {item.label}
-                  {active && (
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-primary" />
-                  )}
+                
                 </Link>
               );
             })}
